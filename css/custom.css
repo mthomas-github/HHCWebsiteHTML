@@ -1,2 +1,6 @@
 
 /*-- Use For Custom Styling --*/
+img {
+    display: block;
+    width: 100%;
+}
