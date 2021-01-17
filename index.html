@@ -181,19 +181,21 @@
                             <hr class="seperator-one">
                         </div>
                     </div>
-                    <form class="margin-50px-bottom">
+                    <form id= "contact-form" class="margin-50px-bottom">
                             <div class="col-xs-6 no-padding">
-                                <input type="text" class="form-control margin-30px-bottom" placeholder="Your Name">
+                                <input type="text" id="name-input" class="form-control margin-30px-bottom" placeholder="Your Name">
                             </div>
                             <div class="col-xs-6 no-padding">
-                                <input type="email" class="form-control margin-30px-bottom" placeholder="Your Email">
+                                <input type="email" id="email-input" class="form-control margin-30px-bottom" placeholder="Your Email">
                             </div>
 
                             <div class="col-xs-12 no-padding">
-                            <textarea class="form-control margin-50px-bottom"
+                            <textarea id="description-input"
+                                      class="form-control margin-50px-bottom"
                                       placeholder="Your Message"></textarea>
                             </div>
-                            <a href="#." class="btn btn-rounded btn-red btn-large width-100">Get Started Now</a>
+                            <!-- <div class="g-recaptcha" data-sitekey="YOUR_GOOGLE_RECAPTCHA_KEY" class="form-control"></div> -->
+                            <button type="submit" onClick="submitToAPI(event)" class="btn btn-rounded btn-red btn-large width-100">Get Started Now</button>
                     </form>
                 </div>
             </div>
@@ -275,6 +277,8 @@
 <script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+<!--Send Mail-->
+<script src="js/form-submission-handler.js"></script>
 <!-- setting -->
 <script src="js/main.js"></script>
 </body>
