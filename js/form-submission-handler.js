@@ -40,12 +40,14 @@ function submitToAPI(e) {
     
     success: function () {
       // clear form and show a success message
+      document.getElementById("submitbutton").disabled = true; 
+      document.querySelector('#submitbutton').innerText = 'Email Sent!';
       document.getElementById("contact-form").reset();
-      location.reload();
+      setTimeout(function(){ location.reload(); }, 2000);
     },
     error: function (e) {
       console.log(e)
-      alert("UnSuccessfull");
+      document.querySelector('#submitbutton').innerText = 'Email Not Sent Try Again Later';
     }});
 }
 
