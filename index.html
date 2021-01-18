@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="css/custom.css"/>
 
 
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="90" class="single-version side-nav single-portfolio">
@@ -194,8 +195,12 @@
                                       class="form-control margin-50px-bottom"
                                       placeholder="Your Message"></textarea>
                             </div>
-                            <!-- <div class="g-recaptcha" data-sitekey="YOUR_GOOGLE_RECAPTCHA_KEY" class="form-control"></div> -->
-                            <button id="submitbutton" type="submit" onClick="submitToAPI(event)" class="btn btn-rounded btn-red btn-large width-100">Get Started Now</button>
+                            <div class="col-xs-12 no-padding">
+                            <div class="g-recaptcha" data-sitekey="6LedzTAaAAAAAOt5gIXDAe1YIv9CLEqlx2aOCVD9"></div>
+                            </div>
+                            <div class="col-xs-12 margin-30px-top">
+                            <button id="submitbutton" type="submit" onClick="submitToAPI(event)" class="btn btn-rounded btn-red btn-large width-100">Send EMail</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -281,5 +286,7 @@
 <script src="js/form-submission-handler.js"></script>
 <!-- setting -->
 <script src="js/main.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </body>
 </html>
