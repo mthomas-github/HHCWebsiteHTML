@@ -212,7 +212,7 @@
                             <hr class="seperator-one">
                         </div>
                     </div>
-                    <form id= "contact-form" class="margin-50px-bottom" target="_blank">
+                    <form id= "contact-form" class="margin-50px-bottom" target="_blank" onSubmit="submitToAPI(event)">
                             <div>
                                 <input type="text" name="name" id="name-input" class="form-control margin-30px-bottom" placeholder="Your Name">
                             </div>
@@ -227,10 +227,9 @@
                                       name="message"></textarea>
                             </div>
                             <div style="padding-bottom: 5px;">
-                            <div class="g-recaptcha" data-sitekey="6LedzTAaAAAAAOt5gIXDAe1YIv9CLEqlx2aOCVD9"></div>
                             </div>
                             <div>
-                            <a id="submitbutton" type="submit" onClick="submitToAPI(event)" class="btn btn-rounded btn-red btn-large width-100">Send EMail</a>
+                            <button id="submitbutton" data-sitekey="6Ld0oq8aAAAAAJBA5poBN-J6z7cSo08gs226v2ek"  data-callback="onSubmit" data-action="submit" class="btn btn-rounded btn-red btn-large width-100">Send EMail</a>
                         </div>
                     </form>
                 </div>
@@ -279,6 +278,11 @@
 <a class="scroll-top-arrow" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
 <!-- end scroll to top  -->
 
+<script>
+    function onSubmit(token) {
+      document.getElementById("Contact-form").submit();
+    }
+  </script>
 
 <!-- javascript libraries -->
 <script src="js/jquery-3.2.1.js"></script>
