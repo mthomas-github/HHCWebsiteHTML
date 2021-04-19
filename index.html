@@ -214,22 +214,23 @@
                     </div>
                     <form id= "contact-form" class="margin-50px-bottom">
                             <div class="col-xs-6 no-padding">
-                                <input type="text" id="name-input" class="form-control margin-30px-bottom" placeholder="Your Name">
+                                <input type="text" name="name" id="name-input" class="form-control margin-30px-bottom" placeholder="Your Name">
                             </div>
                             <div class="col-xs-6">
-                                <input type="email" id="email-input" class="form-control margin-30px-bottom" placeholder="Your Email">
+                                <input type="email" name="email" id="email-input" class="form-control margin-30px-bottom" placeholder="Your Email">
                             </div>
 
                             <div class="col-xs-12 no-padding">
                             <textarea id="description-input"
                                       class="form-control margin-50px-bottom"
-                                      placeholder="Your Message"></textarea>
+                                      placeholder="Your Message"
+                                      name="message"></textarea>
                             </div>
                             <div class="col-xs-12 no-padding">
                             <div class="g-recaptcha" data-sitekey="6LedzTAaAAAAAOt5gIXDAe1YIv9CLEqlx2aOCVD9"></div>
                             </div>
                             <div class="col-xs-12 margin-30px-top">
-                            <button id="submitbutton" type="submit" onClick="submitToAPI(event)" class="btn btn-rounded btn-red btn-large width-100">Send EMail</button>
+                            <a id="submitbutton" type="submit" onClick="submitToAPI(event)" class="btn btn-rounded btn-red btn-large width-100">Send EMail</a>
                         </div>
                     </form>
                 </div>
