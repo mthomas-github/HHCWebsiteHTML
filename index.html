@@ -24,7 +24,6 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" media="all"/>
     <!-- Swiper CSS File -->
-    <link rel="stylesheet" href="css/swiper.min.css">
     <!-- component.css push nav-->
     <link rel="stylesheet" type="text/css" href="css/component.css"/>
     <!-- bundle css -->
@@ -252,24 +251,24 @@
                             <hr class="seperator-one">
                         </div>
                     </div>
-                    <form id= "contact-form" class="margin-50px-bottom">
-                            <div class="col-xs-6 no-padding">
-                                <input type="text" id="name-input" class="form-control margin-30px-bottom" placeholder="Your Name">
+                    <form id= "contact-form" class="margin-50px-bottom" target="_blank" onSubmit="submitToAPI(event)">
+                            <div>
+                                <input type="text" name="name" id="name-input" class="form-control margin-30px-bottom" placeholder="Your Name">
                             </div>
-                            <div class="col-xs-6 no-padding">
-                                <input type="email" id="email-input" class="form-control margin-30px-bottom" placeholder="Your Email">
+                            <div>
+                                <input type="email" name="email" id="email-input" class="form-control margin-30px-bottom" placeholder="Your Email">
                             </div>
 
-                            <div class="col-xs-12 no-padding">
+                            <div>
                             <textarea id="description-input"
                                       class="form-control margin-50px-bottom"
-                                      placeholder="Your Message"></textarea>
+                                      placeholder="Your Message"
+                                      name="message"></textarea>
                             </div>
-                            <div class="col-xs-12 no-padding">
-                            <div class="g-recaptcha" data-sitekey="6LedzTAaAAAAAOt5gIXDAe1YIv9CLEqlx2aOCVD9"></div>
+                            <div style="padding-bottom: 5px;">
                             </div>
-                            <div class="col-xs-12 margin-30px-top">
-                            <button id="submitbutton" type="submit" onClick="submitToAPI(event)" class="btn btn-rounded btn-red btn-large width-100">Send EMail</button>
+                            <div>
+                            <button id="submitbutton" data-sitekey="6Ld0oq8aAAAAAJBA5poBN-J6z7cSo08gs226v2ek"  data-callback="onSubmit" data-action="submit" class="btn btn-rounded btn-red btn-large width-100">Send EMail</a>
                         </div>
                     </form>
                 </div>
@@ -320,6 +319,11 @@
 <a class="scroll-top-arrow" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
 <!-- end scroll to top  -->
 
+<script>
+    function onSubmit(token) {
+      document.getElementById("Contact-form").submit();
+    }
+  </script>
 
 <!-- javascript libraries -->
 <script src="js/jquery-3.2.1.js"></script>
@@ -330,9 +334,6 @@
 <!-- magnific popup -->
 <script src="js/jquery.magnific-popup.min.js"></script>
 <!-- Swiper Core Javascript -->
-<script src="js/swiper.min.js"></script>
-<!-- wow -->
-<script src="js/wow.js"></script>
 <!-- parallax -->
 <script src="js/parallaxie.min.js"></script>
 <!-- isotope.pkgd.min js -->
