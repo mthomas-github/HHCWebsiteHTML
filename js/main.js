@@ -265,27 +265,27 @@ jQuery(function ($) {
                 Swiper Slider
       ==============================================================*/
 
-    // var aboutslider = new Swiper('.swiper-container', {
-    //     centeredSlides: true,
-    //     grabCursor: true,
-    //     spaceBetween: 10,
-    //     loop: true,
-    //     slidesPerView: 3,
-    //     effect: 'coverflow',
-    //     coverflow: {
-    //         rotate: 0,
-    //         stretch: 90,
-    //         depth: 200,
-    //         modifier: 1,
-    //     },
-    //     // comment the following lines out to see how it should be!
-    //     breakpoints: {
-    //         800: {
-    //             slidesPerView: 1.5
-    //         }
-    //     }
+    var aboutslider = new Swiper('.swiper-container', {
+        centeredSlides: true,
+        grabCursor: true,
+        spaceBetween: 10,
+        loop: true,
+        slidesPerView: 3,
+        effect: 'coverflow',
+        coverflow: {
+            rotate: 0,
+            stretch: 90,
+            depth: 200,
+            modifier: 1,
+        },
+        // comment the following lines out to see how it should be!
+        breakpoints: {
+            800: {
+                slidesPerView: 1.5
+            }
+        }
 
-    // });
+    });
 
 
     /*==============================================================
