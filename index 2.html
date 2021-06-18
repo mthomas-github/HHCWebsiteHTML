@@ -172,102 +172,24 @@
                 <!-- swiper slider -->
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_132307008.svg)"></div>
-                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_183825701.svg)"></div>
-                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_191241385.svg)"></div>
-                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_214106674.svg)"></div>
+                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_132307008.svg)">
+                            <div style="position: relative; top: 90%; left: 25%">
+                                <button type="button" class="btn btn-success" onclick="window.open('https://forms.gle/wtr5JaDgrV4ordGQ6', '_blank')">Northen Lights Sign Up</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_183825701.svg)">
+                            <div style="position: relative; top: 90%; left: 25%">
+                                <button type="button" class="btn btn-success" onclick="window.open('https://forms.gle/dBrEs6BmBg7VRL5j8', '_blank')">Havasupai Sign Up</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_191241385.svg)">
+                            <div style="position: relative; top: 90%; left: 35%">
+                                <button type="button" class="btn btn-success" onclick=" window.open('https://forms.gle/AKobt1FM1RoUuRQp9','_blank')">Zion Sign Up</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col"><button type="button"
-                        class="btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign Up For Trips</button>
-                </div>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
 
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">HHC Trips</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form class="form-horizontal">
-                            <!-- Text input-->
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="FirstName">First Name</label>
-                                <div class="col-md-5">
-                                    <input id="FirstName" name="FirstName" type="text" placeholder="enter first name"
-                                        class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="LastName">Last Name</label>
-                                <div class="col-md-5">
-                                    <input id="LastName" name="LastName" type="text" placeholder="enter last name"
-                                        class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="email">Email</label>
-                                <div class="col-md-5">
-                                    <input id="email" name="email" type="email" placeholder="enter email"
-                                        class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="email">Email</label>
-                                <div class="col-md-5">
-                                    <input id="email" name="email" type="email" placeholder="enter email"
-                                        class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-md-4 control-label" for="checkboxes">Pick trips interested in
-                                    attending</label>
-                                <div class="col-md-4">
-                                    <div class="checkbox">
-                                        <label for="checkboxes-0">
-                                            <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
-                                            Havasuapi
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label for="checkboxes-1">
-                                            <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
-                                            Yosemite
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label for="checkboxes-2">
-                                            <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">
-                                            Zion
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label for="checkboxes-2">
-                                            <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">
-                                            San Jacinto Peak Weekend
-                                        </label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label for="checkboxes-2">
-                                            <input type="checkbox" name="checkboxes" id="checkboxes-2" value="">
-                                            Northen Lights
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
                 </div>
-
             </div>
         </div>
 
@@ -382,26 +304,27 @@
                                 <hr class="seperator-one">
                             </div>
                         </div>
-                        <form id="contact-form" class="margin-50px-bottom">
-                            <div class="col-xs-6 no-padding">
-                                <input type="text" id="name-input" class="form-control margin-30px-bottom"
+                        <form id="contact-form" class="margin-50px-bottom" target="_blank"
+                            onSubmit="submitToAPI(event)">
+                            <div>
+                                <input type="text" name="name" id="name-input" class="form-control margin-30px-bottom"
                                     placeholder="Your Name">
                             </div>
-                            <div class="col-xs-6 no-padding">
-                                <input type="email" id="email-input" class="form-control margin-30px-bottom"
-                                    placeholder="Your Email">
+                            <div>
+                                <input type="email" name="email" id="email-input"
+                                    class="form-control margin-30px-bottom" placeholder="Your Email">
                             </div>
 
-                            <div class="col-xs-12 no-padding">
+                            <div>
                                 <textarea id="description-input" class="form-control margin-50px-bottom"
-                                    placeholder="Your Message"></textarea>
+                                    placeholder="Your Message" name="message"></textarea>
                             </div>
-                            <div class="col-xs-12 no-padding">
-                                <div class="g-recaptcha" data-sitekey="6LedzTAaAAAAAOt5gIXDAe1YIv9CLEqlx2aOCVD9"></div>
+                            <div style="padding-bottom: 5px;">
                             </div>
-                            <div class="col-xs-12 margin-30px-top">
-                                <button id="submitbutton" type="submit" onClick="submitToAPI(event)"
-                                    class="btn btn-rounded btn-red btn-large width-100">Send EMail</button>
+                            <div>
+                                <button id="submitbutton" data-sitekey="6Ld0oq8aAAAAAJBA5poBN-J6z7cSo08gs226v2ek"
+                                    data-callback="onSubmit" data-action="submit"
+                                    class="btn btn-rounded btn-red btn-large width-100">Send EMail</a>
                             </div>
                         </form>
                     </div>
@@ -456,6 +379,11 @@
     <a class="scroll-top-arrow" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
     <!-- end scroll to top  -->
 
+    <script>
+        function onSubmit(token) {
+            document.getElementById("Contact-form").submit();
+        }
+    </script>
 
     <!-- javascript libraries -->
     <script src="js/jquery-3.2.1.js"></script>
@@ -467,8 +395,6 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- Swiper Core Javascript -->
     <script src="js/swiper.min.js"></script>
-    <!-- wow -->
-    <script src="js/wow.js"></script>
     <!-- parallax -->
     <script src="js/parallaxie.min.js"></script>
     <!-- isotope.pkgd.min js -->
