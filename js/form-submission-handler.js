@@ -2,7 +2,7 @@
 
 function submitToAPI(e) {
   e.preventDefault();
-  var URL = "https://t1ljeah229.execute-api.us-west-2.amazonaws.com/dev/submit";
+  var URL = "https://inoi7gf7ui.execute-api.us-west-2.amazonaws.com/prod/contact-us";
 
   var Namere = /[A-Za-z]{1}[A-Za-z]/;
   if (!Namere.test($("#name-input").val())) {
