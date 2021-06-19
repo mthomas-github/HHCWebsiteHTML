@@ -2,7 +2,7 @@
 
 function submitToAPI(e) {
   e.preventDefault();
-  var URL = MAIL_URL;
+  var URL = process.env.MAIL_URL;
 
   var Namere = /[A-Za-z]{1}[A-Za-z]/;
   if (!Namere.test($("#name-input").val())) {
@@ -56,7 +56,7 @@ function submitToAPI(e) {
 function saveData(e) {
   e.preventDefault();
  
-  var url = API_URL;
+  var url = process.env.API_URL;
 
   var fname = document.getElementById('fname').value
   var lname = document.getElementById('lname').value
