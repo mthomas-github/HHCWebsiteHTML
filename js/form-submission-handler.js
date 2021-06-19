@@ -2,7 +2,7 @@
 
 function submitToAPI(e) {
   e.preventDefault();
-  var URL = process.env.MAIL_URL;
+  var URL = "https://inoi7gf7ui.execute-api.us-west-2.amazonaws.com/prod/contact-us";
 
   var Namere = /[A-Za-z]{1}[A-Za-z]/;
   if (!Namere.test($("#name-input").val())) {
@@ -56,7 +56,7 @@ function submitToAPI(e) {
 function saveData(e) {
   e.preventDefault();
  
-  var url = process.env.API_URL;
+  var url = "https://yc5030ko0c.execute-api.us-west-2.amazonaws.com/items";
 
   var fname = document.getElementById('fname').value
   var lname = document.getElementById('lname').value
