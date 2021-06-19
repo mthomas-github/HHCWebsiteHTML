@@ -172,52 +172,17 @@
                 <!-- swiper slider -->
                 <div class="swiper-container mySwiper">
                     <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div id="card1" class="card">
-                                    <div class="card__face card__face--front">
-                                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_132307008.svg)">
-                                        </div>
-                                    </div>
-                                    <div class="card__face card__face--back swiper-slide">Northen Lights<div class="innerBackText">Our Northern Lights adventure is many things – spectacular, spiritual and awe-inspiring to name a few. A natural phenomenon better viewed than explained, we'll see the Northern Lights in Fairbanks, Alaska under the velvety night sky, where the purples and greens of the Aurora Borealis dance some 100 miles high into the distance.</div></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="card2" class="card">
-                                    <div class="card__face card__face--front">
-                                        <div class="swiper-slide" style="background:url(images/yosemite.svg)">
-                                        </div>
-                                    </div>
-                                    <div class="card__face card__face--back swiper-slide">Yosemite<div class="innerBackText">Wanna go winter boujee camping again with HHC in amazing Yosemite National Park? We'll run it just like all our awesome HHC overnight adventures where we provide roundtrip transportation, all the reservations, permits, cabins and trails to hike & snowshoe. With a very cool fun packed itinerary?!</div></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="card3" class="card">
-                                    <div class="card__face card__face--front">
-                                        <div class="swiper-slide" style="background:url(images/sanj.svg)">
-                                        </div>
-                                    </div>
-                                    <div class="card__face card__face--back swiper-slide">San Jacinto Peak/Westin Resort Family FUN Weekend<div class="innerBackText">This will be our annual weekend overnight extravaganza. We again will stay at the Westin Desert Willows Friday and Saturday night. Big Italian Dinner and party Saturday night.</div></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="card4" class="card">
-                                    <div class="card__face card__face--front">
-                                        <div class="swiper-slide" style="background:url(images/zion.svg)">
-                                        </div>
-                                    </div>
-                                    <div class="card__face card__face--back swiper-slide">Zion<div class="innerBackText">Wanna go camping with HHC in amazing Zion National Park? We'll run it just like our awesome camping/ hiking adventures to Grand Canyon where we provide roundtrip transportation, all the reservations, trails to hike, and a cool fun packed itinerary?!</div></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div id="card5" class="card">
-                                    <div class="card__face card__face--front">
-                                        <div class="swiper-slide" style="background:url(images/havasaupi.svg)">
-                                        </div>
-                                    </div>
-                                    <div class="card__face card__face--back swiper-slide">Havasuapi<div class="innerBackText">Nestled 3,000 feet deep into Havasu Canyon lay the land of the Havasupai. The area is known around the world for its bluish-green watered pools of Havasu Creek and spectacular waterfalls.
-                                        A perennial creek flows over five breathtakingly beautiful waterfalls and several smaller ones. Havasupai means "people of the blue green water," and is an actual Indian reservation.</div></div>
-                                </div>
-                            </div>
+
+                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_132307008.svg)"
+                            onclick="$('#northenLightModal').modal('show')"></div>
+                        <div class="swiper-slide" style="background:url(images/yosemite.svg)"
+                            onclick="$('#yosemiteModal').modal('show')"></div>
+                        <div class="swiper-slide" style="background:url(images/sanj.svg)"
+                            onclick="$('#sanjModal').modal('show')"></div>
+                        <div class="swiper-slide" style="background:url(images/zion.svg)"
+                            onclick="$('#zionModal').modal('show')"></div>
+                        <div class="swiper-slide" style="background:url(images/havasaupi.svg)"
+                            onclick="$('#havasaupiModal').modal('show')"></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -309,7 +274,140 @@
 
             </div>
         </div>
+        <div id="northenLightModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Northen Lights</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Our Northern Lights adventure is many things – spectacular, spiritual and awe-inspiring to
+                            name a few. A natural phenomenon better viewed than explained, we'll see the Northern Lights
+                            in Fairbanks, Alaska under the velvety night sky, where the purples and greens of the Aurora
+                            Borealis dance some 100 miles high into the distance.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+        <div id="yosemiteModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Yosemite</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Wanna go winter boujee camping again with HHC in amazing Yosemite National Park? We'll run it
+                            just like all our awesome HHC overnight adventures where we provide roundtrip
+                            transportation, all the reservations, permits, cabins and trails to hike & snowshoe. With a
+                            very cool fun packed itinerary?! Place your email on the email interest list now to
+                            hike/snowshoe with HHC in Yosemite National Park. Clicking "Going" does not guarantee you a
+                            spot on this adventure but it tells us you are interested in attending.</p>
+                        <p>Yosemite National Park is in California’s Sierra Nevada mountains. It’s famed for its giant,
+                            ancient sequoia trees, and for Tunnel View, the iconic vista of towering Bridalveil Fall and
+                            the granite cliffs of El Capitan and Half Dome. In Yosemite's Curry Village we will be
+                            staying in heated tent cabins and eating at Yosemite Valley Lodge Food Court and Mountain
+                            Room (Sunday night). Hikes and snowshoeing will be subject to weather.</p>
+                        <p>While on our 4 day, 3 night camping/hiking adventure we'll hike Yosemite's most famous
+                            destinations including Yosemite Falls Trail, Valley Loop Trail, Four Mile Trail, and more!
+                            We may also snowshoe Mariposa Grove Trail to Wawona Point if weather permits.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="sanjModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">San Jacinto Peak/Westin Resort Family FUN Weekend
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>This will be our annual weekend overnight extravaganza. We again will stay at the Westin
+                            Desert Willows Friday and Saturday night. Big Italian Dinner and party Saturday night.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="zionModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Zion</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Wanna go camping with HHC in amazing Zion National Park? We'll run it just like our awesome
+                            camping/ hiking adventures to Grand Canyon where we provide roundtrip transportation, all
+                            the reservations, trails to hike, and a cool fun packed itinerary?! Place your email on the
+                            email interest list now to hike ZION with HHC.</p>
+                        <p>Zion National Park is a southwest Utah nature preserve distinguished by Zion Canyon’s steep
+                            red cliffs. Zion Canyon Scenic Drive cuts through its main section, leading to forest trails
+                            along the Virgin River. The river flows to the Emerald Pools, which have waterfalls and a
+                            hanging garden. Also along the river, partly through deep chasms, is Zion Narrows wading
+                            hike.</p>
+                        <p>While on our 4 day, 3 night camping/hiking adventure we'll hike to Zion's most famous
+                            destinations including The Narrows, Angel's Landing, Watchman Trail, and more!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="havasaupiModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Havasaupi</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Nestled 3,000 feet deep into Havasu Canyon lay the land of the Havasupai. The area is known
+                            around the world for its bluish-green watered pools of Havasu Creek and spectacular
+                            waterfalls.</p>
+                        <p>A perennial creek flows over five breathtakingly beautiful waterfalls and several smaller
+                            ones. Havasupai means "people of the blue green water," and is an actual Indian reservation.
+                            The towering cliffs and spectacular falls of this area are sometimes called the "Shangri-la
+                            of the Grand Canyon." God using nature carved the dramatic grandeur of the Grand Canyon over
+                            time. Our trip will take you into the heart of the canyon and out in four days. We'll leave
+                            the rim and hike 10 miles down to the Havasupai Indian reservation and on to blue-green
+                            waterfalls along ancient trails. You’ll hike with just a daypack, while packhorses carry
+                            your gear, to our campsite.</p>
+                        <p>Our base camp is located in the shade under the cottonwood trees, where we’ll pitch camp, eat
+                            scrumptious meals and enjoy uplifting inspirations. Each day we’ll take Canyon hikes to
+                            enjoy the amazing greatness of this natural playground. By the end of the trip, the canyon
+                            will have worked its magic on you, bathing you in God’s geological time. Do not miss this
+                            once-in-a-lifetime experience.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
     <!--About HHC-->
     <section class="testimonial-two parallax" style="background: url(images/m_AdobeStock_191241385.svg)" id="abouthhc">

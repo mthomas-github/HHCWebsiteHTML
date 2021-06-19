@@ -347,26 +347,7 @@ jQuery(function ($) {
         },
     });
 
-    var card1 = document.getElementById('card1');
-    card1.addEventListener('click', function () {
-        card1.classList.toggle('is-flipped');
-    });
-    var card2 = document.getElementById('card2');
-    card2.addEventListener('click', function () {
-        card2.classList.toggle('is-flipped');
-    });
-    var card3 = document.getElementById('card3');
-    card3.addEventListener('click', function () {
-        card3.classList.toggle('is-flipped');
-    });
-    var card4 = document.getElementById('card4');
-    card4.addEventListener('click', function () {
-        card4.classList.toggle('is-flipped');
-    });
-    var card5 = document.getElementById('card5');
-    card5.addEventListener('click', function () {
-        card5.classList.toggle('is-flipped');
-    });
+
 
 
 
