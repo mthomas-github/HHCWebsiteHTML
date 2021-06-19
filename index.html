@@ -27,7 +27,7 @@
     <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css" media="all" />
     <!-- Swiper CSS File -->
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- component.css push nav-->
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <!-- bundle css -->
@@ -170,13 +170,56 @@
                     </div>
                 </div>
                 <!-- swiper slider -->
-                <div class="swiper-container">
+                <div class="swiper-container mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_132307008.svg)"></div>
-                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_183825701.svg)"></div>
-                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_191241385.svg)"></div>
-                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_214106674.svg)"></div>
+                            <div class="swiper-slide">
+                                <div id="card1" class="card">
+                                    <div class="card__face card__face--front">
+                                        <div class="swiper-slide" style="background:url(images/m_AdobeStock_132307008.svg)">
+                                        </div>
+                                    </div>
+                                    <div class="card__face card__face--back swiper-slide">Northen Lights<div class="innerBackText">Our Northern Lights adventure is many things – spectacular, spiritual and awe-inspiring to name a few. A natural phenomenon better viewed than explained, we'll see the Northern Lights in Fairbanks, Alaska under the velvety night sky, where the purples and greens of the Aurora Borealis dance some 100 miles high into the distance.</div></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div id="card2" class="card">
+                                    <div class="card__face card__face--front">
+                                        <div class="swiper-slide" style="background:url(images/yosemite.svg)">
+                                        </div>
+                                    </div>
+                                    <div class="card__face card__face--back swiper-slide">Yosemite<div class="innerBackText">Wanna go winter boujee camping again with HHC in amazing Yosemite National Park? We'll run it just like all our awesome HHC overnight adventures where we provide roundtrip transportation, all the reservations, permits, cabins and trails to hike & snowshoe. With a very cool fun packed itinerary?!</div></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div id="card3" class="card">
+                                    <div class="card__face card__face--front">
+                                        <div class="swiper-slide" style="background:url(images/sanj.svg)">
+                                        </div>
+                                    </div>
+                                    <div class="card__face card__face--back swiper-slide">San Jacinto Peak/Westin Resort Family FUN Weekend<div class="innerBackText">This will be our annual weekend overnight extravaganza. We again will stay at the Westin Desert Willows Friday and Saturday night. Big Italian Dinner and party Saturday night.</div></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div id="card4" class="card">
+                                    <div class="card__face card__face--front">
+                                        <div class="swiper-slide" style="background:url(images/zion.svg)">
+                                        </div>
+                                    </div>
+                                    <div class="card__face card__face--back swiper-slide">Zion<div class="innerBackText">Wanna go camping with HHC in amazing Zion National Park? We'll run it just like our awesome camping/ hiking adventures to Grand Canyon where we provide roundtrip transportation, all the reservations, trails to hike, and a cool fun packed itinerary?!</div></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div id="card5" class="card">
+                                    <div class="card__face card__face--front">
+                                        <div class="swiper-slide" style="background:url(images/havasaupi.svg)">
+                                        </div>
+                                    </div>
+                                    <div class="card__face card__face--back swiper-slide">Havasuapi<div class="innerBackText">Nestled 3,000 feet deep into Havasu Canyon lay the land of the Havasupai. The area is known around the world for its bluish-green watered pools of Havasu Creek and spectacular waterfalls.
+                                        A perennial creek flows over five breathtakingly beautiful waterfalls and several smaller ones. Havasupai means "people of the blue green water," and is an actual Indian reservation.</div></div>
+                                </div>
+                            </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col"><button type="button"
                         class="btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign Up For Trips</button>
@@ -213,14 +256,16 @@
                                             </div>
                                         </div>
                                         <div class="tab">
-                                            <p><input id="fname" placeholder="First Name" oninput="this.className = ''" name="dd">
+                                            <p><input id="fname" placeholder="First Name" oninput="this.className = ''"
+                                                    name="dd">
                                             </p>
-                                            <p><input id="lname" placeholder="Last Name" oninput="this.className = ''" name="nn">
+                                            <p><input id="lname" placeholder="Last Name" oninput="this.className = ''"
+                                                    name="nn">
                                             </p>
                                         </div>
                                         <div class="tab">
-                                            <p><input id="email" type="email" placeholder="E-mail..." oninput="this.className = ''"
-                                                    name="email"></p>
+                                            <p><input id="email" type="email" placeholder="E-mail..."
+                                                    oninput="this.className = ''" name="email"></p>
                                         </div>
                                         <div class="tab">
                                             <div class="form-group">
@@ -236,8 +281,8 @@
                                                     <option value="5">Northen Lights</option>
                                                 </select>
                                             </div>
-                                            <p><input id="total" placeholder="Total # in your party" oninput="this.className = ''"
-                                                    name="nn">
+                                            <p><input id="total" placeholder="Total # in your party"
+                                                    oninput="this.className = ''" name="nn">
                                             </p>
                                         </div>
                                         <div class="thanks-message text-center" id="text-message">
@@ -248,8 +293,8 @@
                                             <div style="float:right;"> <button type="button" id="prevBtn"
                                                     onclick="nextPrev(-1)">Previous</button> <button type="button"
                                                     id="nextBtn" onclick="nextPrev(1)">Next</button>
-                                                <button type="button" id="submitBtn" type="submit" onclick="saveData(event)"
-                                                    hidden>Submit</button>
+                                                <button type="button" id="submitBtn" type="submit"
+                                                    onclick="saveData(event)" hidden>Submit</button>
                                             </div>
                                         </div>
                                     </form>
@@ -368,31 +413,35 @@
                     <div class="contact-form">
                         <div class="area-heading text-left xs-text-center margin-50px-bottom">
                             <div class="text-medium text-red margin-10px-bottom">Have A Question?!!</div>
-                            <h3 class="area-title text-capitalize alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
+                            <h3
+                                class="area-title text-capitalize alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
                                 Let's Get In Touch</h3>
                             <div class="seperator margin-20px-bottom">
                                 <hr class="seperator-two">
                                 <hr class="seperator-one">
                             </div>
                         </div>
-                        <form id= "contact-form" class="margin-50px-bottom" target="_blank" onSubmit="submitToAPI(event)">
-                                <div>
-                                    <input type="text" name="name" id="name-input" class="form-control margin-30px-bottom" placeholder="Your Name">
-                                </div>
-                                <div>
-                                    <input type="email" name="email" id="email-input" class="form-control margin-30px-bottom" placeholder="Your Email">
-                                </div>
-    
-                                <div>
-                                <textarea id="description-input"
-                                          class="form-control margin-50px-bottom"
-                                          placeholder="Your Message"
-                                          name="message"></textarea>
-                                </div>
-                                <div style="padding-bottom: 5px;">
-                                </div>
-                                <div>
-                                <button id="submitbutton" data-sitekey="6Ld0oq8aAAAAAJBA5poBN-J6z7cSo08gs226v2ek"  data-callback="onSubmit" data-action="submit" class="btn btn-rounded btn-red btn-large width-100">Send EMail</a>
+                        <form id="contact-form" class="margin-50px-bottom" target="_blank"
+                            onSubmit="submitToAPI(event)">
+                            <div>
+                                <input type="text" name="name" id="name-input" class="form-control margin-30px-bottom"
+                                    placeholder="Your Name">
+                            </div>
+                            <div>
+                                <input type="email" name="email" id="email-input"
+                                    class="form-control margin-30px-bottom" placeholder="Your Email">
+                            </div>
+
+                            <div>
+                                <textarea id="description-input" class="form-control margin-50px-bottom"
+                                    placeholder="Your Message" name="message"></textarea>
+                            </div>
+                            <div style="padding-bottom: 5px;">
+                            </div>
+                            <div>
+                                <button id="submitbutton" data-sitekey="6Ld0oq8aAAAAAJBA5poBN-J6z7cSo08gs226v2ek"
+                                    data-callback="onSubmit" data-action="submit"
+                                    class="btn btn-rounded btn-red btn-large width-100">Send EMail</a>
                             </div>
                         </form>
                     </div>
@@ -406,7 +455,7 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
     <!-- footer -->
     <footer class="padding-40px-tb bg-white">
         <div class="container">
@@ -462,7 +511,7 @@
     <!-- magnific popup -->
     <script src="js/jquery.magnific-popup.min.js"></script>
     <!-- Swiper Core Javascript -->
-    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <!-- wow -->
     <script src="js/wow.js"></script>
     <!-- parallax -->
@@ -474,10 +523,6 @@
     <!-- setting -->
     <script src="js/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
-
-
 </body>
 
 </html>

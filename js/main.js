@@ -330,27 +330,44 @@ jQuery(function ($) {
                 Swiper Slider
       ==============================================================*/
 
-    var aboutslider = new Swiper('.swiper-container', {
-        centeredSlides: true,
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
         grabCursor: true,
-        spaceBetween: 10,
-        loop: true,
-        slidesPerView: 3,
-        effect: 'coverflow',
-        coverflow: {
-            rotate: 0,
-            stretch: 90,
-            depth: 200,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
             modifier: 1,
+            slideShadows: true,
         },
-        // comment the following lines out to see how it should be!
-        breakpoints: {
-            800: {
-                slidesPerView: 1.5
-            }
-        }
-
+        pagination: {
+            el: ".swiper-pagination",
+        },
     });
+
+    var card1 = document.getElementById('card1');
+    card1.addEventListener('click', function () {
+        card1.classList.toggle('is-flipped');
+    });
+    var card2 = document.getElementById('card2');
+    card2.addEventListener('click', function () {
+        card2.classList.toggle('is-flipped');
+    });
+    var card3 = document.getElementById('card3');
+    card3.addEventListener('click', function () {
+        card3.classList.toggle('is-flipped');
+    });
+    var card4 = document.getElementById('card4');
+    card4.addEventListener('click', function () {
+        card4.classList.toggle('is-flipped');
+    });
+    var card5 = document.getElementById('card5');
+    card5.addEventListener('click', function () {
+        card5.classList.toggle('is-flipped');
+    });
+
 
 
     /*==============================================================
@@ -504,7 +521,7 @@ jQuery(function ($) {
             Slider Revolution
       ==============================================================*/
 
-  //  $("#rev_slider_5_1").show().revolution({
+    //  $("#rev_slider_5_1").show().revolution({
     //     sliderType: "standard",
     //     jsFileLocation: "//localhost:82/revslider/revslider/public/assets/js/",
     //     sliderLayout: "fullscreen",
