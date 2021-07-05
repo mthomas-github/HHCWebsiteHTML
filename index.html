@@ -47,7 +47,33 @@
     <div id="loader">
         <div class='loader'></div>
     </div>
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
 
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "105237515161626");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v11.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
     <!-- start header -->
     <header>
         <!-- start navigation -->
@@ -78,9 +104,6 @@
                                 </li>
                                 <li>
                                     <a href="#aboutme" class="scroll">About Me</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -119,9 +142,6 @@
                     </li>
                     <li class="clearfix">
                         <a href="#aboutme" class="scroll"> <span>04.</span>About Me</a>
-                    </li>
-                    <li class="clearfix">
-                        <a href="#contact"> <span>05.</span>Contact</a>
                     </li>
                 </ul>
 
@@ -506,56 +526,6 @@
 
     </section>
     <!--contact-->
-    <section id="contact" class="ingle-items center-block parallax no-margin">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="contact-form">
-                        <div class="area-heading text-left xs-text-center margin-50px-bottom">
-                            <div class="text-medium text-red margin-10px-bottom">Have A Question?!!</div>
-                            <h3
-                                class="area-title text-capitalize alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
-                                Let's Get In Touch</h3>
-                            <div class="seperator margin-20px-bottom">
-                                <hr class="seperator-two">
-                                <hr class="seperator-one">
-                            </div>
-                        </div>
-                        <form id="contact-form" class="margin-50px-bottom" target="_blank"
-                            onSubmit="submitToAPI(event)">
-                            <div>
-                                <input type="text" name="name" id="name-input" class="form-control margin-30px-bottom"
-                                    placeholder="Your Name">
-                            </div>
-                            <div>
-                                <input type="email" name="email" id="email-input"
-                                    class="form-control margin-30px-bottom" placeholder="Your Email">
-                            </div>
-
-                            <div>
-                                <textarea id="description-input" class="form-control margin-50px-bottom"
-                                    placeholder="Your Message" name="message"></textarea>
-                            </div>
-                            <div style="padding-bottom: 5px;">
-                            </div>
-                            <div>
-                                <button id="submitbutton" data-sitekey="6Ld0oq8aAAAAAJBA5poBN-J6z7cSo08gs226v2ek"
-                                    data-callback="onSubmit" data-action="submit"
-                                    class="btn btn-rounded btn-red btn-large width-100">Send EMail</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="map-wrapper no-transition">
-                            <div class="map" id="map"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- footer -->
     <footer class="padding-40px-tb bg-white">
         <div class="container">
@@ -575,8 +545,6 @@
                         <a href="#abouthhc" class="scroll text-extra-dark-gray">About HHC</a>
                         <span class="verticle-line"></span>
                         <a href="#aboutme" class="scroll text-extra-dark-gray">About Me</a>
-                        <span class="verticle-line"></span>
-                        <a href="#contact" class="text-extra-dark-gray">Contact</a>
                     </div>
                 </div>
                 <div class="col-sm-3">
