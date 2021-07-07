@@ -47,32 +47,32 @@
     <div id="loader">
         <div class='loader'></div>
     </div>
-<!-- Messenger Chat Plugin Code -->
-<div id="fb-root"></div>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
 
-<!-- Your Chat Plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "105237515161626");
-  chatbox.setAttribute("attribution", "biz_inbox");
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+    <script>
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "105237515161626");
+        chatbox.setAttribute("attribution", "biz_inbox");
 
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v11.0'
-    });
-  };
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v11.0'
+            });
+        };
 
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <!-- start header -->
     <header>
         <!-- start navigation -->
@@ -103,6 +103,9 @@
                                 </li>
                                 <li>
                                     <a href="#aboutme" class="scroll">About Me</a>
+                                </li>
+                                <li>
+                                    <a href="#events" class="scroll">HHC Events</a>
                                 </li>
                             </ul>
                         </div>
@@ -141,6 +144,9 @@
                     </li>
                     <li class="clearfix">
                         <a href="#aboutme" class="scroll"> <span>04.</span>About Me</a>
+                    </li>
+                    <li class="clearfix">
+                        <a href="#events" class="scroll"> <span>05.</span>HHC Events</a>
                     </li>
                 </ul>
 
@@ -187,7 +193,7 @@
                         <h3
                             class="area-title text-capitalize alt-font text-blue margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
                             HHC Trips</h3>
-                            <small>Click Picture For More Info</small>
+                        <small>Click Picture For More Info</small>
                     </div>
                 </div>
                 <!-- swiper slider -->
@@ -525,6 +531,31 @@
 
     </section>
     <!--contact-->
+    <section id="events" class="parallax" style="background: url(images/m_AdobeStock_183825701.svg)">
+        <div class="container">
+
+            <!-- about slider-->
+            <div class="row">
+                <!-- title section -->
+                <div class="col-lg-9 col-md-10 col-sm-12 text-center center-col">
+                    <div class="area-heading text-center margin-70px-bottom">
+                        <h3
+                            class="area-title text-capitalize alt-font text-white margin-20px-bottom font-weight-300 sm-width-100 xs-width-100">
+                            HHC Events</h3>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-1- col-sm-12 text-center center-col">
+                    <div class="fb-page" data-href="https://www.facebook.com/heritagehikingclub" data-tabs="events"
+                        data-width="" data-height="" data-small-header="true" data-adapt-container-width="true"
+                        data-hide-cover="true" data-show-facepile="false">
+                        <blockquote cite="https://www.facebook.com/heritagehikingclub" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/heritagehikingclub">Heritage Hiking Club</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- footer -->
     <footer class="padding-40px-tb bg-white">
         <div class="container">
@@ -590,6 +621,9 @@
     <!-- setting -->
     <script src="js/main.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0&appId=831898154172671&autoLogAppEvents=1"
+        nonce="Ia0V07ew"></script>
 </body>
 
 </html>
