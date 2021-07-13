@@ -888,7 +888,7 @@ nav.navbar ul.nav .dropdown-menu.second-level .dropdown-menu {margin-top: 0 }
 ====================================== */
 
 /* scroll to top */
-.scroll-top-arrow, .scroll-top-arrow:focus {font-size: 30px; line-height: 45px; color: #fff; background: #cb342b; display: none; height: 50px; width: 50px; padding: 0; position: fixed; right: 30px; text-align: center; text-decoration: none; top: 90%; z-index: 10006; border-radius: 100%;}
+.scroll-top-arrow, .scroll-top-arrow:focus {font-size: 30px; line-height: 45px; color: #fff; background: #cb342b; display: none; height: 50px; width: 50px; padding: 0; position: fixed; right: 90px; text-align: center; text-decoration: none; top: 91%; z-index: 10006; border-radius: 100%;}
 .scroll-top-arrow:hover {background: #cb342b; opacity: .8; color: #fff !important; border-color: #cb342b
 }
 .scroll-top-arrow i {line-height: 45px;  position: relative;}
